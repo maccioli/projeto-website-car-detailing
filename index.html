@@ -26,9 +26,9 @@
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="menuNavbar">
-            <div class="navbar-nav"><a href="" class="nav-link text-light">Home</a>
-            <div class="navbar-nav"><a href="" class="nav-link text-light">Services</a>
-            <div class="navbar-nav"><a href="" class="nav-link text-light">Portfolio</a>
+            <div class="navbar-nav"><a href="" class="nav-link text-light">Home |</a>
+            <div class="navbar-nav"><a href="" class="nav-link text-light">Services |</a>
+            <div class="navbar-nav"><a href="" class="nav-link text-light">Portfolio |</a>
             <div class="navbar-nav"><a href="" class="nav-link text-light">Contact</a>
             </div>
         </div>
@@ -39,6 +39,18 @@
         <source src="assets/videos/vinheta.mp4" type="video/mp4">
     </video>
 </div>
+<audio id="vinhetaAudio">
+    <source src="/assets/audio/vinheta.mp3" type="audio/mpeg">
+    Seu navegador não suporta a reprodução de áudio.
+</audio>
+
+<script>
+    window.onload = function() {
+    var vinhetaAudio = document.getElementById('vinhetaAudio');
+    vinhetaAudio.volume = 0.5;
+    vinhetaAudio.play();
+}
+</script>
 
 <footer class="p-4 bg-dark text-light text-center fixed-bottom py-4">
     Todos os direitos reservados.
