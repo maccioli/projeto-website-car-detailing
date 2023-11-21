@@ -9,5 +9,5 @@ function audioPlay() {
 function redirecionarParaPrincipal() {
     setTimeout(function () {
         window.location.href = '../principal.html';
-    }, 15000); // Redirecionar para a página 2 após 3 segundos
+    }, 20000); // Redirecionar para a página 2 após 3 segundos
 }
