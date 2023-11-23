@@ -1,9 +1,31 @@
+.divTransition{
+    animation: transitionIn 5s;
+}
+
+@keyframes transitionIn {
+    from {
+    opacity: 0;
+    transform: (-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0)
+    }
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
 
+@font-face {
+        font-family: 'Matura MT Script Capitals';
+        src: url('../fonts/matura-mt-script-capitals.ttf') format('truetype');
+        /* Adicione outros formatos de fonte para maior compatibilidade */
+}
+
     .navbar-nav .nav-link {
-        font-size: 26px; /* Ajuste o tamanho da fonte conforme necessário */
+        font-size: 26px;
+        font-weight: 600;
         font-family: 'sans-serif', 'cursive';
-        margin-right: 20px;
+        margin-right: 15px;
     }
 
     .navbar.transparent {
@@ -11,11 +33,6 @@
         box-shadow: none !important;
     }
 
-    @font-face {
-            font-family: 'Matura MT Script Capitals';
-            src: url('../fonts/matura-mt-script-capitals.ttf') format('truetype');
-            /* Adicione outros formatos de fonte para maior compatibilidade */
-        }
 
 *{
     margin: 0;
@@ -28,12 +45,15 @@
         font-size: 24px;
         color:white;
     }
-
-    body, html{
-        position: relative;
-        width: 100%;
+    
+    body{
+        margin: 0;
+        padding: 0;
+        background-image: url('./img/bgCar.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         height: 100vh;
-        overflow: hidden;
     }
 
     .anchorAnime,
@@ -57,23 +77,19 @@
         width: 90%;
     }
 
-    .video{
-        display: flex;
-        justify-content: center;
+    .bground{
+        display:flex;
+        justify-content:center;
         align-items: center;
-        background: darkslategray;
         width: 100%;
         height: 100vh;
     }
-    .video video{
+
+    .bground img{
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: 100vh;
         object-fit: cover;
-    }
-
-    #vinhetaAudio {
-        display: none;
     }

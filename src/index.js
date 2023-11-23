@@ -8,6 +8,6 @@ function audioPlay() {
 
 function redirecionarParaPrincipal() {
     setTimeout(function () {
-        window.location.href = '../principal.html';
-    }, 20000); // Redirecionar para a página 2 após 3 segundos
+        window.location.href = '../service.html';
+    }, 20000);
 }
